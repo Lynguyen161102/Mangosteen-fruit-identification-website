@@ -1,0 +1,110 @@
+/* Phần CSS hiện tại của bạn */
+.top-div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media screen and (min-width: 1000px) {
+    .top-div {
+        margin-left: 100px;
+        margin-right: 100px;
+    }
+}
+
+.section-div {
+    width: 33%;
+    padding: 20px;
+}
+
+.selected-div {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center; 
+    background-color: #ffe0e8;
+    border-radius: 8px;
+    border-color: #059c69;
+    border-style: solid;
+    border-width: 2px; 
+}
+
+.deselected-div {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center; 
+    background-color: #059c69; 
+    border-radius: 8px;
+}
+
+.selected-text {
+    font-weight: 500;
+    color: #059c69;
+}
+
+.deselected-text {
+    font-weight: 400;
+    color: white;
+}
+
+/* Định dạng canvas */
+canvas {
+    border: 1px solid black; /* Thêm viền cho canvas */
+    max-width: 100%; /* Đảm bảo canvas không vượt quá kích thước phần tử chứa */
+    height: auto; /* Giữ tỷ lệ khung hình của canvas */
+    border-radius: 8px; /* Bo góc cho canvas nếu cần */
+}
+
+/* Định dạng hình ảnh */
+img {
+    max-width: 100%; /* Đảm bảo hình ảnh không vượt quá kích thước phần tử chứa */
+    height: auto; /* Giữ tỷ lệ khung hình của hình ảnh */
+    border-radius: 8px; /* Bo góc cho hình ảnh nếu cần */
+}
+
+/* Định dạng nút "Load Model" */
+.file-label {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 10px;
+    border: 2px solid #059c69;
+    border-radius: 8px;
+    background-color: #059c69;
+    color: white;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
+    outline: none; /* Loại bỏ viền mặc định của trình duyệt */
+}
+
+.file-label:hover {
+    background-color: #ff5f7e;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.file-label:active {
+    background-color: #059c69;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.file-label:focus {
+    outline: none; /* Loại bỏ khung trắng khi nút được chọn */
+}
+
+/* Đảm bảo input file không hiển thị và không nhận sự kiện click */
+.file-input {
+    display: none;
+}
+
+/* Container cho canvas */
+.canvas-container {
+    border: 2px solid black; /* Viền cho khung canvas */
+    border-radius: 8px; /* Bo góc cho khung */
+    padding: 10px; /* Khoảng cách giữa canvas và khung */
+    background-color: #f0f0f0; /* Màu nền cho khung */
+    display: flex;
+    justify-content: center; /* Căn giữa nội dung bên trong container */
+    width: 100%; /* Đảm bảo khung canvas chiếm toàn bộ chiều rộng của phần tử chứa */
+    box-sizing: border-box; /* Bao gồm cả padding và border trong tổng chiều rộng */
+}
